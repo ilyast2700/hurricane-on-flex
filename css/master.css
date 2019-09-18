@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+@media (min-width: 600px) {
+    .form-first-email, .form-first-name, .form-first-message{
+    width: 600px;
+  }
+  button.form-first-button{
+    width: 600px;
+  }
+  .form-first-wrapper {
+    padding: 0;
+  }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.center {
+  color: #03363d;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-first-warning {
+ /*
+  opacity: 0;
+  */
+  margin: 5px 0 0;
+
+  color: #eb6551;
+
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+.form-first-warning-active {
+  opacity: 1;
+}
+
+.form-first-wrapper {
+  display: block;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+
+  background-color: #0ff;
+  color: #3d5354;
+
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.form-first-form {
+
+  background-color: red;
+}
+
+.form-first-input {
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 3px;
+  box-shadow: none;
+  height: 2em;
+}
+
+.form-first-name label, .form-first-email label, .form-first-message label{
+  display: block;
+}
+
+.form-first-email, .form-first-name, .form-first-message, .form-first-button{
+  display: block;
+  margin: 0 auto;
+}
+
+.form-first-message textarea {
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 3px;
+  resize: none;
+}
+
+.form-first-button{
+  border: 1px solid #30aabc;
+  height: 2em;
+  width: 100%;
+
+  background-color: #30aabc;
+
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-first-button:hover,.form-first-button:focus {
+  border: 1px solid #1c8a93;
+
+  background-color: #1c8a93;
+}
