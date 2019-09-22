@@ -10,3 +10,4 @@ inputOne.onfocus = function() {
     this.classList.remove('.form-first-warning-active');
     errorOne.innerHTML = "";
   }
+}
