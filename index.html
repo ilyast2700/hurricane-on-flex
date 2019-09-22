@@ -7,30 +7,30 @@
   </head>
   <body>
     <div class="form-first-wrapper">
-      <form class="form-first-form" method="post">
+      <form class="form-first-form" method="post" name="firstForm">
 
 
           <h2 class="center">Contact us!</h2>
 
-            <div class="form-first-name">
+            <div class="form-first-name"style="background-color: yellow">
             <label>Your name</label>
-            <input class="form-first-input" placeholder="" tabindex="1" type="text">
-            <div class="form-first-warning">Please enter your name</div>
+            <input id="inputOne" class="form-first-input" placeholder="" tabindex="1" type="text">
+            <div id="errorOne" class="form-first-warning"></div>
           </div>
 
-          <div class="form-first-email">
+          <div class="form-first-email"  id="input" style="background-color: green">
             <label>Your email</label>
             <input class="form-first-input" placeholder="" tabindex="2" type="email">
-            <div class="form-first-warning">Please enter valid email adress</div>
+            <div id="warning" class="form-first-warning">Please enter valid email adress</div>
           </div>
 
-          <div class="form-first-message">
+          <div class="form-first-message"style="background-color: purple">
             <label>Your message</label>
-            <textarea name="content" tabindex="3" cols="30" rows="10"></textarea>
+            <textarea name="firstMessage" tabindex="3" cols="30" rows="10"></textarea>
             <div class="form-first-warning">Please enter your message</div>
           </div>
 
-          <button class="form-first-button" type="">Submit</button>
+          <button class="form-first-button" type="button">Submit</button>
 
 
       </form>
