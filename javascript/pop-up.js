@@ -1,4 +1,3 @@
-let re = new RegExp('w');
 inputOne.onblur = function() {
   if (this.value === '') {
     this.classList.add('form-first-warning-active');
