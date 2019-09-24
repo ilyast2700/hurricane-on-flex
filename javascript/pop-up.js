@@ -1,6 +1,6 @@
 inputOne.onblur = function() {
-  if (inputOne.value === '') {
-    inputOne.classList.add('form-first-warning-active');
+  if (this.value === '') {
+    this.classList.add('form-first-warning-active');
     errorOne.innerHTML = 'Please enter your name.';
   }
 };
