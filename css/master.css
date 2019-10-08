@@ -1,11 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 @media (min-width: 600px) {
-    .form-first-email, .form-first-name, .form-first-message{
+    .form-first-email, .form-first-name, .form-first-message, .form-first-button{
     width: 600px;
-  }
-  button.form-first-button{
-    width: 600px;
+    margin: 0 auto;
   }
   .form-first-wrapper {
     padding: 0;
@@ -44,7 +42,6 @@
 }
 
 .form-first-wrapper {
-  display: block;
   margin: 0 auto;
   padding: 0 10px;
   width: 100%;
