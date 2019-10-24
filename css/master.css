@@ -1,17 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
-
-@media (min-width: 600px) {
-    .form-first-email, .form-first-name, .form-first-message{
-    width: 600px;
-  }
-  button.form-first-button{
-    width: 600px;
-  }
-  .form-first-wrapper {
-    padding: 0;
-  }
+@media (min-width: 420px) {
+	.form-first-container {
+		padding: 0 20%;
+	}
 }
-
+@media (min-width: 560px) {
+	.form-first-container {
+		padding: 0 25%;
+	}
+}
+@media (min-width: 640px) {
+	.form-first-container {
+		padding: 0 30%;
+	}
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -25,10 +27,29 @@
 	text-rendering: optimizeLegibility;
 }
 
+.form-first-container {
+}
+
+.form-first-form {
+  display: flex;
+  flex-direction: column;
+	padding: 0 1%;
+
+  color: #3d5354;
+
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.2rem;
+}
+
+.form-first-form div, button{
+	display: flex;
+	flex-direction: column;
+}
+
 .center {
   color: #03363d;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -43,17 +64,6 @@
   font-weight: 400;
 }
 
-.form-first-wrapper {
-  display: block;
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 100%;
-
-  color: #3d5354;
-
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-
 .form-first-input {
   border: 1px solid #999;
   border-radius: 3px;
@@ -62,26 +72,18 @@
   width: 100%;
 }
 
-.form-first-name label, .form-first-email label, .form-first-message label{
-  display: block;
-}
-
-.form-first-email, .form-first-name, .form-first-message, .form-first-button{
-  display: block;
-  margin: 0 auto;
-}
-
 .form-first-message textarea {
-  width: 100%;
   border: 1px solid #999;
   border-radius: 3px;
   resize: none;
 }
 
 .form-first-button{
+	align-items: center;
   border: 1px solid #30aabc;
+  border-radius: 3px;
   height: 2em;
-  width: 100%;
+	justify-content: center;
 
   background-color: #30aabc;
 
@@ -93,6 +95,7 @@
 
 .form-first-button:hover,.form-first-button:focus {
   border: 1px solid #1c8a93;
+  border-radius: 3px;
 
   background-color: #1c8a93;
 }
